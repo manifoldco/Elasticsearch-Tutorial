@@ -1,0 +1,13 @@
+extends master
+
+block content
+    h1.title Player Stats
+
+    div.container
+        div.searchbox
+            form.searchform
+                input.searchbar(type="text")
+                input.value(type="hidden")
+                button.submit(type="submit", disabled="disabled") Get Details
+            div.autocomplete
+        div.result
