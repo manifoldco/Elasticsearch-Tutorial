@@ -27,8 +27,8 @@ function readDataFile(){
     return require("./data/players.json")
 }
 
-function deleteIndex(){
-    return es.indices.delete({
+function indexExists() {
+    return es.indices.exists({
         index: INDEX_NAME
     });
 }
@@ -39,8 +39,8 @@ function createIndex(){
     });
 }
 
-function indexExists() {
-    return es.indices.exists({
+function deleteIndex(){
+    return es.indices.delete({
         index: INDEX_NAME
     });
 }
