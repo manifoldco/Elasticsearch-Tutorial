@@ -67,7 +67,7 @@ function suggestion(text, size){
 }
 
 function search(id){
-    $.getJSON('/search/'+id)
+    $.getJSON('/stat/'+id)
         .done(function(data){
             $.each(data.hits.hits, function(index, value){
                 var details = value._source;
