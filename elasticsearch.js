@@ -8,7 +8,7 @@ env('.env');
 
 const es = elasticsearch.Client({
     host: process.env.BONSAI_URL,
-    log: 'trace'
+    log: 'error'
 });
 
 const INDEX_NAME = 'players';
