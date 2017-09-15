@@ -73,4 +73,5 @@ app.get('/stat/:id/', search);
 
 app.listen(APP_PORT, function(){
     logger.logger.log('App is running');
+    console.log(`App is running on ${APP_PORT}`);
 });
